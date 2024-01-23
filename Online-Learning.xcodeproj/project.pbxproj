@@ -15,6 +15,11 @@
 		185A75182B320E9F00F9DF57 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A75172B320E9F00F9DF57 /* CustomButton.swift */; };
 		185B8F442B5CD154000BCC63 /* NoProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B8F432B5CD154000BCC63 /* NoProductView.swift */; };
 		185B8F482B5CD9DF000BCC63 /* CourseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B8F472B5CD9DF000BCC63 /* CourseDetails.swift */; };
+		188D5FFC2B5FFBAE0077C87D /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FFB2B5FFBAE0077C87D /* NotificationViewModel.swift */; };
+		188D5FFE2B5FFFA80077C87D /* MainNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FFD2B5FFFA80077C87D /* MainNotificationView.swift */; };
+		188D60002B60000E0077C87D /* TitleNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FFF2B60000E0077C87D /* TitleNotifications.swift */; };
+		188D60022B6003140077C87D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D60012B6003140077C87D /* MessageView.swift */; };
+		188D60052B6003A20077C87D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D60042B6003A20077C87D /* NotificationView.swift */; };
 		189916522B313A5C00EC6782 /* Online_LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189916512B313A5C00EC6782 /* Online_LearningApp.swift */; };
 		189916542B313A5C00EC6782 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189916532B313A5C00EC6782 /* ContentView.swift */; };
 		189916562B313A5D00EC6782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189916552B313A5D00EC6782 /* Assets.xcassets */; };
@@ -63,6 +68,11 @@
 		185A75172B320E9F00F9DF57 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		185B8F432B5CD154000BCC63 /* NoProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoProductView.swift; sourceTree = "<group>"; };
 		185B8F472B5CD9DF000BCC63 /* CourseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetails.swift; sourceTree = "<group>"; };
+		188D5FFB2B5FFBAE0077C87D /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		188D5FFD2B5FFFA80077C87D /* MainNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNotificationView.swift; sourceTree = "<group>"; };
+		188D5FFF2B60000E0077C87D /* TitleNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNotifications.swift; sourceTree = "<group>"; };
+		188D60012B6003140077C87D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		188D60042B6003A20077C87D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		1899164E2B313A5C00EC6782 /* Online-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189916512B313A5C00EC6782 /* Online_LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Online_LearningApp.swift; sourceTree = "<group>"; };
 		189916532B313A5C00EC6782 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,6 +196,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		188D5FF82B5FFB080077C87D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				188D5FFA2B5FFB850077C87D /* View Model */,
+				188D5FF92B5FFB170077C87D /* View */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		188D5FF92B5FFB170077C87D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188D5FFD2B5FFFA80077C87D /* MainNotificationView.swift */,
+				188D60012B6003140077C87D /* MessageView.swift */,
+				188D60042B6003A20077C87D /* NotificationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		188D5FFA2B5FFB850077C87D /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				188D5FFB2B5FFBAE0077C87D /* NotificationViewModel.swift */,
+				188D5FFF2B60000E0077C87D /* TitleNotifications.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		189916452B313A5C00EC6782 = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +291,7 @@
 		1899167C2B313B2600EC6782 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				188D5FF82B5FFB080077C87D /* Notifications */,
 				18B853802B5E7C6500B54D24 /* Tab Bar */,
 				185B8F452B5CD96C000BCC63 /* Course Details */,
 				18ECC68B2B34AFD800FEDD8D /* Course View */,
@@ -529,16 +568,21 @@
 				18108A622B31D17000C0A57B /* AppBarView.swift in Sources */,
 				189916832B313B8E00EC6782 /* SecondScreenView.swift in Sources */,
 				18DDC59C2B3185B700EB2D33 /* RoundedShape.swift in Sources */,
+				188D5FFE2B5FFFA80077C87D /* MainNotificationView.swift in Sources */,
 				185B8F442B5CD154000BCC63 /* NoProductView.swift in Sources */,
 				185A75162B31FD1800F9DF57 /* SearchView.swift in Sources */,
 				189916812B313B8000EC6782 /* FirstScreenView.swift in Sources */,
 				18108A5E2B31D11000C0A57B /* MainHomeView.swift in Sources */,
 				1855FB8D2B35FD7E004C6FED /* SearchCategory.swift in Sources */,
+				188D60002B60000E0077C87D /* TitleNotifications.swift in Sources */,
 				18ECC68E2B34AFF700FEDD8D /* CourseView.swift in Sources */,
 				18C718322B5D3F74008A603D /* VideoManager.swift in Sources */,
 				1899168A2B31445600EC6782 /* RegisterView.swift in Sources */,
+				188D5FFC2B5FFBAE0077C87D /* NotificationViewModel.swift in Sources */,
 				189916542B313A5C00EC6782 /* ContentView.swift in Sources */,
+				188D60022B6003140077C87D /* MessageView.swift in Sources */,
 				18AED4B42B33485400D6CE11 /* MyAccountView.swift in Sources */,
+				188D60052B6003A20077C87D /* NotificationView.swift in Sources */,
 				1842F1C22B5E883000814CF4 /* TabBarView.swift in Sources */,
 				189916522B313A5C00EC6782 /* Online_LearningApp.swift in Sources */,
 				189916862B313BE000EC6782 /* ScreenView.swift in Sources */,

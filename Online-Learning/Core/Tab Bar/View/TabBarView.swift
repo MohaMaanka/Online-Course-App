@@ -16,7 +16,6 @@ struct TabBarView: View {
                 ZStack{
                    
                     if index == 0 {
-                        
                         Color.black.opacity(0.03)
                     }
                     else if index == 1{
